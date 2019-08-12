@@ -1,11 +1,26 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# backplane-rescue_C
+# Sensor_DHT11
 #
-DEF backplane-rescue_C C 0 10 N Y 1 F N
+DEF Sensor_DHT11 U 0 40 Y Y 1 F N
+F0 "U" 150 250 50 H V C CNN
+F1 "Sensor_DHT11" 100 -250 50 H V C CNN
+F2 "" 150 250 50 H I C CNN
+F3 "" 150 250 50 H I C CNN
+DRAW
+S -200 200 200 -200 0 1 10 f
+X VCC 1 -100 300 100 D 50 50 1 1 W
+X IO 2 300 0 100 L 50 50 1 1 B
+X GND 4 -100 -300 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# backplane-rescue_C-backplane-rescue
+#
+DEF backplane-rescue_C-backplane-rescue C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "backplane-rescue_C" 25 -100 50 H V L CNN
+F1 "backplane-rescue_C-backplane-rescue" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -19,11 +34,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_Conn_01x01
+# backplane-rescue_Conn_01x01-backplane-rescue
 #
-DEF backplane-rescue_Conn_01x01 J 0 40 Y N 1 F N
+DEF backplane-rescue_Conn_01x01-backplane-rescue J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "backplane-rescue_Conn_01x01" 0 -100 50 H V C CNN
+F1 "backplane-rescue_Conn_01x01-backplane-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -41,11 +56,11 @@ X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_D
+# backplane-rescue_D-backplane-rescue
 #
-DEF backplane-rescue_D D 0 40 N N 1 F N
+DEF backplane-rescue_D-backplane-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "backplane-rescue_D" 0 -100 50 H V C CNN
+F1 "backplane-rescue_D-backplane-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -64,11 +79,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_D_Zener_Small
+# backplane-rescue_D_Zener_Small-backplane-rescue
 #
-DEF backplane-rescue_D_Zener_Small D 0 10 N N 1 F N
+DEF backplane-rescue_D_Zener_Small-backplane-rescue D 0 10 N N 1 F N
 F0 "D" 0 90 50 H V C CNN
-F1 "backplane-rescue_D_Zener_Small" 0 -90 50 H V C CNN
+F1 "backplane-rescue_D_Zener_Small-backplane-rescue" 0 -90 50 H V C CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -87,11 +102,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_FAN
+# backplane-rescue_FAN-backplane-rescue
 #
-DEF backplane-rescue_FAN J 0 40 Y Y 1 F N
+DEF backplane-rescue_FAN-backplane-rescue J 0 40 Y Y 1 F N
 F0 "J" 0 -200 60 H V C CNN
-F1 "backplane-rescue_FAN" 0 200 60 H V C CNN
+F1 "backplane-rescue_FAN-backplane-rescue" 0 200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -101,24 +116,11 @@ X 5V 2 -350 -50 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_GND
+# backplane-rescue_GND-RESCUE-backplane-backplane-rescue
 #
-DEF backplane-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF backplane-rescue_GND-RESCUE-backplane-backplane-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "backplane-rescue_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# backplane-rescue_GND-RESCUE-backplane
-#
-DEF backplane-rescue_GND-RESCUE-backplane #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "backplane-rescue_GND-RESCUE-backplane" 0 -150 50 H V C CNN
+F1 "backplane-rescue_GND-RESCUE-backplane-backplane-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -127,11 +129,24 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_I2C_HEADER
+# backplane-rescue_GND-backplane-rescue
 #
-DEF backplane-rescue_I2C_HEADER J 0 40 Y Y 1 F N
+DEF backplane-rescue_GND-backplane-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "backplane-rescue_GND-backplane-rescue" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# backplane-rescue_I2C_HEADER-backplane-rescue
+#
+DEF backplane-rescue_I2C_HEADER-backplane-rescue J 0 40 Y Y 1 F N
 F0 "J" 0 -350 60 H V C CNN
-F1 "backplane-rescue_I2C_HEADER" 0 350 60 H V C CNN
+F1 "backplane-rescue_I2C_HEADER-backplane-rescue" 0 350 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -144,11 +159,11 @@ X 5V 5 -350 -200 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_IC880A-SPI
+# backplane-rescue_IC880A-SPI-backplane-rescue
 #
-DEF backplane-rescue_IC880A-SPI U 0 40 Y Y 3 L N
+DEF backplane-rescue_IC880A-SPI-backplane-rescue U 0 40 Y Y 3 L N
 F0 "U" 0 -600 60 H V C CNN
-F1 "backplane-rescue_IC880A-SPI" 0 600 60 H V C CNN
+F1 "backplane-rescue_IC880A-SPI-backplane-rescue" 0 600 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -182,11 +197,11 @@ X GPS_RX 26 700 450 200 L 50 50 3 1 I
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_LED_Small
+# backplane-rescue_LED_Small-backplane-rescue
 #
-DEF backplane-rescue_LED_Small D 0 10 N N 1 F N
+DEF backplane-rescue_LED_Small-backplane-rescue D 0 10 N N 1 F N
 F0 "D" -50 125 50 H V L CNN
-F1 "backplane-rescue_LED_Small" -175 -100 50 H V L CNN
+F1 "backplane-rescue_LED_Small-backplane-rescue" -175 -100 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -204,11 +219,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_MCP3425A0T-E_CH-RESCUE-backplane
+# backplane-rescue_MCP3425A0T-E_CH-RESCUE-backplane-backplane-rescue
 #
-DEF backplane-rescue_MCP3425A0T-E_CH-RESCUE-backplane U 0 40 Y Y 1 F N
+DEF backplane-rescue_MCP3425A0T-E_CH-RESCUE-backplane-backplane-rescue U 0 40 Y Y 1 F N
 F0 "U" -400 300 50 H V L CNN
-F1 "backplane-rescue_MCP3425A0T-E_CH-RESCUE-backplane" 100 300 50 H V L CNN
+F1 "backplane-rescue_MCP3425A0T-E_CH-RESCUE-backplane-backplane-rescue" 100 300 50 H V L CNN
 F2 "" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -226,11 +241,11 @@ X Vin- 6 -500 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_MP1584_MODULE
+# backplane-rescue_MP1584_MODULE-backplane-rescue
 #
-DEF backplane-rescue_MP1584_MODULE U 0 40 Y Y 1 F N
+DEF backplane-rescue_MP1584_MODULE-backplane-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 -300 60 H V C CNN
-F1 "backplane-rescue_MP1584_MODULE" 0 290 60 H V C CNN
+F1 "backplane-rescue_MP1584_MODULE-backplane-rescue" 0 290 60 H V C CNN
 F2 "" 0 100 60 H I C CNN
 F3 "" 0 100 60 H I C CNN
 DRAW
@@ -243,11 +258,11 @@ X EN 5 -450 -150 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_PWR_FLAG
+# backplane-rescue_PWR_FLAG-backplane-rescue
 #
-DEF backplane-rescue_PWR_FLAG #FLG 0 0 N N 1 F P
+DEF backplane-rescue_PWR_FLAG-backplane-rescue #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "backplane-rescue_PWR_FLAG" 0 150 50 H V C CNN
+F1 "backplane-rescue_PWR_FLAG-backplane-rescue" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -256,11 +271,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_PWR_HEADER
+# backplane-rescue_PWR_HEADER-backplane-rescue
 #
-DEF backplane-rescue_PWR_HEADER J 0 40 Y Y 1 F N
+DEF backplane-rescue_PWR_HEADER-backplane-rescue J 0 40 Y Y 1 F N
 F0 "J" 0 -200 60 H V C CNN
-F1 "backplane-rescue_PWR_HEADER" 0 200 60 H V C CNN
+F1 "backplane-rescue_PWR_HEADER-backplane-rescue" 0 200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -270,11 +285,11 @@ X VCC 2 -350 -50 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_Polyfuse_Small
+# backplane-rescue_Polyfuse_Small-backplane-rescue
 #
-DEF backplane-rescue_Polyfuse_Small F 0 0 N Y 1 F N
+DEF backplane-rescue_Polyfuse_Small-backplane-rescue F 0 0 N Y 1 F N
 F0 "F" -75 0 50 V V C CNN
-F1 "backplane-rescue_Polyfuse_Small" 75 0 50 V V C CNN
+F1 "backplane-rescue_Polyfuse_Small-backplane-rescue" 75 0 50 V V C CNN
 F2 "" 50 -200 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -290,11 +305,11 @@ X ~ 2 0 -100 25 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_Q_NMOS_GSD
+# backplane-rescue_Q_NMOS_GSD-backplane-rescue
 #
-DEF backplane-rescue_Q_NMOS_GSD Q 0 0 Y N 1 F N
+DEF backplane-rescue_Q_NMOS_GSD-backplane-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "backplane-rescue_Q_NMOS_GSD" 200 -50 50 H V L CNN
+F1 "backplane-rescue_Q_NMOS_GSD-backplane-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -322,11 +337,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_Q_PMOS_GSD
+# backplane-rescue_Q_PMOS_GSD-backplane-rescue
 #
-DEF backplane-rescue_Q_PMOS_GSD Q 0 0 Y N 1 F N
+DEF backplane-rescue_Q_PMOS_GSD-backplane-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "backplane-rescue_Q_PMOS_GSD" 200 -50 50 H V L CNN
+F1 "backplane-rescue_Q_PMOS_GSD-backplane-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -354,29 +369,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_R
+# backplane-rescue_R-RESCUE-backplane-backplane-rescue
 #
-DEF backplane-rescue_R R 0 0 N Y 1 F N
+DEF backplane-rescue_R-RESCUE-backplane-backplane-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "backplane-rescue_R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# backplane-rescue_R-RESCUE-backplane
-#
-DEF backplane-rescue_R-RESCUE-backplane R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "backplane-rescue_R-RESCUE-backplane" 0 0 50 V V C CNN
+F1 "backplane-rescue_R-RESCUE-backplane-backplane-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -390,11 +387,29 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_Raspi_2_3
+# backplane-rescue_R-backplane-rescue
 #
-DEF backplane-rescue_Raspi_2_3 U 0 40 Y Y 1 F N
+DEF backplane-rescue_R-backplane-rescue R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "backplane-rescue_R-backplane-rescue" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# backplane-rescue_Raspi_2_3-backplane-rescue
+#
+DEF backplane-rescue_Raspi_2_3-backplane-rescue U 0 40 Y Y 1 F N
 F0 "U" 700 -1250 50 H V C CNN
-F1 "backplane-rescue_Raspi_2_3" -400 900 50 H V C CNN
+F1 "backplane-rescue_Raspi_2_3-backplane-rescue" -400 900 50 H V C CNN
 F2 "Pin_Headers:Pin_Header_Straight_2x20" 1000 1250 50 H I C CNN
 F3 "" 50 -150 50 H I C CNN
 DRAW
@@ -442,11 +457,11 @@ X GND 9 -300 -1300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_SERIAL_HEADER
+# backplane-rescue_SERIAL_HEADER-backplane-rescue
 #
-DEF backplane-rescue_SERIAL_HEADER J 0 40 Y Y 1 F N
+DEF backplane-rescue_SERIAL_HEADER-backplane-rescue J 0 40 Y Y 1 F N
 F0 "J" 0 -200 60 H V C CNN
-F1 "backplane-rescue_SERIAL_HEADER" 0 200 60 H V C CNN
+F1 "backplane-rescue_SERIAL_HEADER-backplane-rescue" 0 200 60 H V C CNN
 F2 "" 50 0 60 H I C CNN
 F3 "" 50 0 60 H I C CNN
 DRAW
@@ -456,11 +471,11 @@ X RX 2 -300 -50 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_SHTC3
+# backplane-rescue_SHTC3-backplane-rescue
 #
-DEF backplane-rescue_SHTC3 U 0 40 Y Y 1 F N
+DEF backplane-rescue_SHTC3-backplane-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 -250 60 H V C CNN
-F1 "backplane-rescue_SHTC3" 0 250 60 H V C CNN
+F1 "backplane-rescue_SHTC3-backplane-rescue" 0 250 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -472,11 +487,11 @@ X VSS 4 450 100 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# backplane-rescue_SW_Push
+# backplane-rescue_SW_Push-backplane-rescue
 #
-DEF backplane-rescue_SW_Push SW 0 40 N N 1 F N
+DEF backplane-rescue_SW_Push-backplane-rescue SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "backplane-rescue_SW_Push" 0 -60 50 H V C CNN
+F1 "backplane-rescue_SW_Push-backplane-rescue" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -486,6 +501,25 @@ P 2 0 1 0 0 50 0 120 N
 P 2 0 1 0 100 50 -100 50 N
 X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# regulators_LM2596_MODULE
+#
+DEF regulators_LM2596_MODULE U 0 40 Y Y 1 F N
+F0 "U" 0 -250 60 H V C CNN
+F1 "regulators_LM2596_MODULE" 0 250 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+$FPLIST
+ LM2596_MODULE
+$ENDFPLIST
+DRAW
+S -250 200 250 -200 0 1 0 N
+X IN+ 1 -350 100 100 R 50 50 1 1 P
+X IN- 2 -350 -100 100 R 50 50 1 1 P
+X OUT- 3 350 -100 100 L 50 50 1 1 P
+X OUT+ 4 350 100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

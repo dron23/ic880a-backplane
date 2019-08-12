@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name backplane-rescue)(type Legacy)(uri ${KIPRJMOD}/backplane-rescue.lib)(options "")(descr ""))
+  (lib (name regulators)(type Legacy)(uri /home/dron/git/ic880a-backplane/regulators.lib)(options "")(descr ""))
+)
