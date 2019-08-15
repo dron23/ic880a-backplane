@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/dron/git/ic880a-backplane/backplane.sch)
-    (date "Mon 12 Aug 2019 10:08:10 PM CEST")
+    (date "Thu 15 Aug 2019 10:39:17 PM CEST")
     (tool "Eeschema 5.0.2-5.fc29")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
