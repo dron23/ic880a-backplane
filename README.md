@@ -61,6 +61,7 @@ Make sure that you clone all submodules:
 ## License
 
 © 2017–2018 Danilo Bargen. Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
+© 2019 Jiri Slezka, CIT / SU, jiri.slezka@slu.cz
 
 If you make any modification to this board, it would be great if you could let
 me know at mail@dbrgn.ch.

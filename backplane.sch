@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "iC880A RPi Backplane"
-Date "2019-08-12"
+Title "iC880A Raspberry Pi Backplane"
+Date "2019-08-22"
 Rev "v2.1-1"
-Comp "Danilo Bargen / Coredump Rapperswil"
-Comment1 "Buy from https://shop.coredump.ch/"
-Comment2 "Modified by Jiri Slezka / CIT SU"
+Comp "Coredump Rapperswil, https://coredump.ch/"
+Comment1 "Modified by Jiri Slezka / CIT SU"
+Comment2 "https://lora.vsb.cz"
 Comment3 ""
 Comment4 ""
 $EndDescr
