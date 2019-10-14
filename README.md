@@ -55,5 +55,5 @@ This PCB was created using KiCad 5.1 (5.1.4-3.fc30).
 
 ## License
 
-© 2017–2018 Danilo Bargen. Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
-© 2019 Jiri Slezka, CIT / SU, jiri.slezka@slu.cz
+- © 2017–2018 Danilo Bargen. Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
+- © 2019 Jiri Slezka, CIT / SU, jiri.slezka@slu.cz
