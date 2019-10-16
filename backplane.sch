@@ -208,8 +208,6 @@ F 3 "" H 6950 4850 60  0001 C CNN
 	1    6950 4850
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6900 4600
-NoConn ~ 6900 4700
 $Comp
 L backplane-rescue:C-backplane-rescue C1
 U 1 1 5898C4BA
@@ -1262,12 +1260,6 @@ Connection ~ 10800 2400
 Wire Wire Line
 	10800 2400 10950 2400
 Wire Notes Line
-	500  3900 7150 3900
-Wire Notes Line
-	7150 3900 7150 6500
-Wire Notes Line
-	7150 4750 11200 4750
-Wire Notes Line
 	5900 3000 11200 3000
 $Comp
 L regulators:LM2596_MODULE U7
@@ -1288,4 +1280,46 @@ Wire Wire Line
 	8850 650  9200 650 
 Wire Wire Line
 	9200 650  9200 1100
+Text GLabel 6900 4100 1    60   Input ~ 0
+TX
+Text GLabel 7100 4100 1    60   Input ~ 0
+RX
+Wire Wire Line
+	6900 4600 6900 4500
+Wire Notes Line
+	11200 4750 7300 4750
+Wire Notes Line
+	500  3900 7300 3900
+Wire Notes Line
+	7300 3900 7300 6500
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5DAE6269
+P 6900 4350
+F 0 "JP1" V 6900 4550 50  0000 R CNN
+F 1 "SolderJumper_2_Open" V 7000 5200 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6900 4350 50  0001 C CNN
+F 3 "~" H 6900 4350 50  0001 C CNN
+	1    6900 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5DAE719B
+P 7100 4350
+F 0 "JP2" V 7100 4300 50  0000 R CNN
+F 1 "SolderJumper_2_Open" V 6950 4300 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7100 4350 50  0001 C CNN
+F 3 "~" H 7100 4350 50  0001 C CNN
+	1    7100 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 4100 6900 4200
+Wire Wire Line
+	7100 4100 7100 4200
+Wire Wire Line
+	7100 4500 7100 4700
+Wire Wire Line
+	6900 4700 7100 4700
 $EndSCHEMATC
