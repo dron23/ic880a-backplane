@@ -37,12 +37,15 @@ Other
   with 40-pin GPIO header)
 - Mounting holes for Raspberry Pi B+ / 2B / 3B / Zero
 - Compatibility with PoE hat
+- UART link from GPS module on ic880a to Raspberry Pi
 
 ## PCB
 
 ![Rendered](rendered/PCB_3D_Front.png)
 
 ![Rendered](rendered/PCB_3D_Back.png)
+
+![Rendered](rendered/PCB_3D_View.png)
 
 ## Schematics
 
